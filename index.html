@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080809">
+  <meta name="description" content="INDRAJIT — Video Editor, Creative Designer and Visual Storyteller. TIME KAMU Portfolio.">
+
+  <title>INDRAJIT — TIME KAMU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- CINEMATIC LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-mark">TK<span>.</span></div>
+    <div class="loader-line">
+      <i id="loaderProgress"></i>
+    </div>
+    <p>PREPARING THE EXPERIENCE <span id="loaderPercent">00</span></p>
+  </div>
+
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="scene"></canvas>
+
+  <!-- NAVIGATION -->
+  <header class="topbar">
+
+    <a class="brand" href="#home">
+      <span class="brand-symbol">T</span>
+      <span>TIME KAMU<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a class="top-cta" href="#contact">
+      LET'S TALK <span>↗</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#about">ABOUT</a>
+    <a href="#work">WORK</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+
+      <div class="hero-meta">
+        <span class="eyebrow">
+          <i class="status-dot"></i>
+          AVAILABLE FOR CREATIVE PROJECTS
+        </span>
+        <span class="mono">INDEPENDENT CREATOR / INDIA</span>
+      </div>
+
+      <div class="hero-copy">
+
+        <p class="hero-kicker reveal">
+          VIDEO EDITOR <b>×</b> VISUAL STORYTELLER
+        </p>
+
+        <h1 class="hero-title">
+          <span class="outline-text">I'M</span>
+          <span class="red-word">INDRAJIT</span><span class="hero-period">.</span>
+        </h1>
+
+        <div class="hero-bottom">
+
+          <p class="hero-description">
+            I turn ideas into
+            <em>visual experiences</em>
+            through editing, motion and creative design.
+          </p>
+
+          <a class="round-link" href="#work">
+            <span>EXPLORE<br>MY WORK</span>
+            <b>↓</b>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="hero-index mono">
+        <span>01 / 04</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+
+      <div class="hero-side-note mono">
+        CRAFTED WITH<br>IMAGINATION
+      </div>
+
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee">
+      <div class="marquee-track">
+        <span>EDIT WITH INTENTION</span>
+        <b>✳</b>
+        <span>CREATE WITH FEELING</span>
+        <b>✳</b>
+        <span>TIME KAMU</span>
+        <b>✳</b>
+        <span>EDIT WITH INTENTION</span>
+        <b>✳</b>
+        <span>CREATE WITH FEELING</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="section-label">
+        <span class="red-line"></span>
+        <span class="mono">01 — THE CREATOR</span>
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+          <p class="big-statement reveal">
+            NOT JUST<br>
+            AN EDITOR<span class="red-word">.</span><br>
+            <span class="muted">A CREATOR.</span>
+          </p>
+        </div>
+
+        <div class="about-copy">
+
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+
+          <h2>
+            Hey, I'm <span class="red-word">Indrajit.</span>
+          </h2>
+
+          <p class="body-copy">
+            I'm a video editor and creative designer behind
+            <strong>TIME KAMU</strong>.
+            I love shaping raw ideas into engaging stories
+            with rhythm, emotion and a distinct visual identity.
+          </p>
+
+          <p class="body-copy muted">
+            From short-form edits to motion-led visuals,
+            my goal is simple: make every frame count.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <strong>01</strong>
+              <span>CREATIVE MINDSET</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>DETAIL OBSESSED</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>ALWAYS LEARNING</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="work section" id="work">
+
+      <div class="section-heading">
+        <div class="section-label">
+          <span class="red-line"></span>
+          <span class="mono">02 — SELECTED WORK</span>
+        </div>
+        <p class="mono muted">A FEW FRAMES FROM MY WORLD</p>
+      </div>
+
+      <div class="work-intro">
+        <h2>MADE TO<br><span class="red-word">MOVE.</span></h2>
+        <p>
+          Visual experiments, edits and stories.<br>
+          Replace these demo cards with your best work.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <a class="project-card project-large"
+           href="https://www.youtube.com/@time.kamu"
+           target="_blank" rel="noreferrer">
+
+          <div class="project-art art-one">
+            <span class="art-label">01 / MOTION</span>
+            <div class="art-shape"></div>
+            <strong>FRAME<br>IN MOTION</strong>
+            <span class="art-bottom">TIME KAMU ORIGINALS ↗</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Motion & Video Edits</h3>
+              <p>Rhythm • Transitions • Storytelling</p>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card"
+           href="https://www.youtube.com/@time.kamu"
+           target="_blank" rel="noreferrer">
+
+          <div class="project-art art-two">
+            <span class="art-label">02 / DESIGN</span>
+            <div class="orbit"></div>
+            <strong>VISUAL<br>IDENTITY</strong>
+            <span class="art-bottom">DESIGN STUDY ↗</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Creative Design</h3>
+              <p>Posters • Thumbnails • Graphics</p>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card"
+           href="https://www.youtube.com/@time.kamu"
+           target="_blank" rel="noreferrer">
+
+          <div class="project-art art-three">
+            <span class="art-label">03 / SHORT FORM</span>
+            <div class="bars">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <strong>FAST CUTS.<br>BIG FEEL.</strong>
+            <span class="art-bottom">REELS & SHORTS ↗</span>
+          </div>
+
+          <div class="project-info">
+            <div>
+              <h3>Short-form Content</h3>
+              <p>Reels • Shorts • Social Edits</p>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+      </div>
+
+      <p class="work-note mono">
+        * DEMO PROJECT PANELS — ADD YOUR OWN VIDEO LINKS AND THUMBNAILS.
+      </p>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+
+      <div class="section-label">
+        <span class="red-line"></span>
+        <span class="mono">03 — MY TOOLKIT</span>
+      </div>
+
+      <div class="skills-layout">
+
+        <h2>
+          TOOLS ARE<br>
+          JUST THE <span class="red-word">START.</span>
+        </h2>
+
+        <div class="skill-list">
+
+          <div>
+            <span>01</span>
+            <strong>VIDEO EDITING</strong>
+            <small>Timing / Story / Transitions</small>
+          </div>
+
+          <div>
+            <span>02</span>
+            <strong>MOTION GRAPHICS</strong>
+            <small>Movement / Animation / Effects</small>
+          </div>
+
+          <div>
+            <span>03</span>
+            <strong>VISUAL DESIGN</strong>
+            <small>Composition / Typography / Color</small>
+          </div>
+
+          <div>
+            <span>04</span>
+            <strong>CONTENT CREATION</strong>
+            <small>Short-form / YouTube / Social</small>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tool-chips">
+        <span>ALIGHT MOTION</span>
+        <span>CAPCUT</span>
+        <span>CREATIVE THINKING</span>
+        <span>VISUAL STORYTELLING</span>
+      </div>
+
+    </section>
+
+    <!-- YOUTUBE CHANNEL -->
+    <section class="channel section">
+
+      <div class="channel-card">
+
+        <div class="channel-orb"></div>
+
+        <div class="channel-content">
+
+          <p class="eyebrow">MY CREATIVE SPACE</p>
+
+          <h2>
+            WELCOME TO<br>
+            <span class="red-word">TIME KAMU.</span>
+          </h2>
+
+          <p>Where imagination gets a timeline.</p>
+
+          <a class="button button-light"
+             href="https://www.youtube.com/@time.kamu"
+             target="_blank" rel="noreferrer">
+            VISIT YOUTUBE CHANNEL <span>↗</span>
+          </a>
+
+        </div>
+
+        <div class="channel-stamp mono">
+          EST. BY INDRAJIT<br>
+          CREATIVE IN EVERY FRAME
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="section-label">
+        <span class="red-line"></span>
+        <span class="mono">04 — YOUR TURN</span>
+      </div>
+
+      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+
+      <h2>
+        LET'S MAKE<br>
+        SOMETHING <span class="red-word">ICONIC.</span>
+      </h2>
+
+      <a class="contact-email"
+         href="mailto:your-email@example.com">
+        LET'S CONNECT <span>↗</span>
+      </a>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/time.kamu/"
+           target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+
+        <a href="https://www.youtube.com/@time.kamu"
+           target="_blank" rel="noreferrer">YOUTUBE ↗</a>
+
+        <a href="https://github.com/"
+           target="_blank" rel="noreferrer">GITHUB ↗</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <a class="brand" href="#home">
+      <span class="brand-symbol">T</span>
+      <span>TIME KAMU<span class="brand-dot">.</span></span>
+    </a>
+
+    <span class="mono">DESIGNED TO MAKE YOU LOOK TWICE.</span>
+
+    <span class="mono">
+      © <span id="year"></span> INDRAJIT
+    </span>
+
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
